@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 
+    Tried to keep the html as clean as possible, and use CSS for nearly every modifier of the base element 
+    (style, color, height, width, etc...). This was broken up into three sections: Header, Main and Footer 
+    across the pages
+-->
+
+<head>
+    <title>Chris Figgins - About Me</title>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="container-fluid bg-white w-100 port-nopadding">
+        <div class="row port-maxwidth">
+            <div class="col port-nopadding">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-light port-nav">
+                    <span class="port-brand">Chris Figgins</span>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#titleToggler"
+                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="titleToggler">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="container-fluid port-main mh-100 h-100">
+        <div class="row port-maxwidth mh-100 h-100">
+            <div class="col mh-100 h-100 border">
+                <p>
+                    <h1>About Me</h1>
+                </p>
+                <hr />
+                <div class="card float-left mr-5 mb-3" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/images/generic-person.png" alt="Chris Figgins">
+                    <div class="card-body">
+                        <p class="card-text">Generic Photo</p>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        Continue to adapt, learn, <strong>never settle</strong> for what you already know - there's
+                        plenty of opportunities out there to continue to build and enhance your skillsets. In this
+                        case, I'm taking this course to learn nodeJS and build upon a foundation that hasn't been
+                        touched since college with frontend development. Even some of the more basic functionality
+                        has been upgraded heavily since my initial deep dive (HTML5 & CSS3 Primarily). Seeing how
+                        far these technologies have advanced, primarily with ease of use, is fascinating.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere lectus sit amet metus
+                        gravida, in efficitur mi pretium. Phasellus eleifend velit at lacus auctor, sed egestas diam
+                        condimentum. Nulla sodales dignissim leo. Pellentesque faucibus ligula ut ligula sollicitudin
+                        tempus. Nulla eget egestas velit. Nunc ullamcorper mauris orci, non rhoncus purus pulvinar vel.
+                        Etiam id odio porta, egestas tellus tempor, sollicitudin dolor. Donec pretium nisl sit amet
+                        sollicitudin feugiat. Vestibulum velit velit, imperdiet nec leo at, vehicula viverra leo. Fusce
+                        nec mi et dolor porttitor vehicula. Nullam molestie condimentum libero, non porttitor magna
+                        aliquam id. Sed lobortis interdum molestie. Aenean ultricies dui ac ante varius tempor. Quisque
+                        et lacus vitae sem consequat suscipit. Maecenas id tortor quis orci rutrum molestie in id elit.
+                    </p>
+                    <p>
+                        I'm building that on top of a strong foundation in:
+                    </p>
+                    <div class="row mb-5 ml-2 mr-2 p-2 bg-light">
+                        <div class="col-4">
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                    data-toggle="list" href="#list-home" role="tab" aria-controls="home">Backend
+                                    Service Development</a>
+                                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+                                    href="#list-profile" role="tab" aria-controls="profile">Infrastructure as Code</a>
+                                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                                    href="#list-messages" role="tab" aria-controls="messages">Strategic Runtimes &
+                                    Pipelines</a>
+                                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                                    href="#list-settings" role="tab" aria-controls="settings">Cloud Architecture</a>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">The
+                                    “traditional” back end is a mix of the server, databases, APIs, and operating
+                                    systems that power an app’s front end. For an in-depth look at the software that
+                                    ties it all together, read Server-Side Scripting: Back-End Web Development
+                                    Technology, or get a basic view of back-end technology with our article The Role of
+                                    the Back-End Developer.</div>
+                                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Infrastructure
+                                    as code (IaC) is the process of managing and provisioning computer data centers
+                                    through machine-readable definition files, rather than physical hardware
+                                    configuration or interactive configuration tools.[1] The IT infrastructure managed
+                                    by this comprises both physical equipment such as bare-metal servers as well as
+                                    virtual machines and associated configuration resources. The definitions may be in
+                                    a version control system. It can use either scripts or declarative definitions,
+                                    rather than manual processes, but the term is more often used to promote
+                                    declarative approaches.</div>
+                                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">No
+                                    single element in a development team's lifecycle defines them as a DevOps-enabled
+                                    organization. Were anything the rainbow and the gold, it would be the delivery
+                                    pipeline. The deployment pipeline centers the team and the process, functioning as
+                                    the signature of any DevOps shop.</div>
+                                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Image
+                                    result for cloud architecturewww.lynda.com
+                                    Cloud computing architecture refers to the components and subcomponents required
+                                    for cloud computing. These components typically consist of a front end platform
+                                    (fat client, thin client, mobile device), back end platforms (servers, storage), a
+                                    cloud based delivery, and a network (Internet, Intranet, Intercloud).</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer port-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 mx-auto">
+                    <div class="text-center">
+                        Copyright&nbsp;&copy;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
