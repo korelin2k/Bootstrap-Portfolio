@@ -8,55 +8,88 @@
 -->
 
 <head>
-    <title>Chris Figgins - Contact Me</title>
+    <title>Chris Figgins - Contact</title>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
     <!-- Header Section -->
-    <section id="header">
-        <div id="name">
-            <h1>
-                Chris Figgins
-            </h1>
+    <div class="container-fluid bg-white w-100 p-0 m-0">
+        <div class="row port-maxwidth p-0 bg-white">
+            <div class="col p-0 m-0">
+                <nav class="navbar navbar-expand-lg navbar-light port-nav p-0 bg-white">
+                    <span class="port-brand">Chris Figgins</span>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#titleToggler"
+                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="titleToggler">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-        <div id="links">
-            <p>
-                <a href="index.html">About</a> | <a href="portfolio.html">Portfolio</a> | <a href="contact.html">Contact</a>
-            </p>
-        </div>
-    </section>
+    </div>
 
     <!-- Main Section -->
-    <section id="main">
-        <div id="primary">
-            <div id="primary-content">
+    <div class="container-fluid port-main mh-100 h-100">
+        <div class="row port-maxwidth p-0 mh-100 h-100 bg-white">
+            <div class="col mh-100 h-100 border p-2">
                 <p>
                     <h1>Contact</h1>
                 </p>
                 <hr>
-                <div id="form">
-                    <form action="#">
-                        <p>Name</p>
-                        <input type="text" name="fullname" value="John Smith" class="port-input">
-                        <p>Email</p>
-                        <input type="text" name="email" value="example@gmail.com" class="port-input">
-                        <p>Message</p>
-                        <textarea rows="15" cols="50" name="comment" form="usrform" class="port-textarea"></textarea>
-                        <input type="submit" value="Submit" class="port-submit">
-                    </form>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Name</label>
+                        <input type="email" class="form-control" aria-describedby="nameHelp"
+                            placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer port-footer m-0 w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 mx-auto">
+                    <div class="text-center">
+                        Copyright&nbsp;&copy;
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Footer Section -->
-    <section id="footer">
-        <p>
-            Copyright&nbsp;&copy;
-        </p>
-    </section>
+    </footer>
 </body>
 
 </html>

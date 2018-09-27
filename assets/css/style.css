@@ -6,14 +6,10 @@ body {
 
 .port-maxwidth {
     max-width: 960px;
-    padding: 0px;
-    background-color: #fff;
     margin: auto;
 }
 
 .port-nav {
-    background-color: #fff;
-    padding: 0px;
     max-width: 100%;
     line-height: 40px;
 }
@@ -40,13 +36,11 @@ body {
     font-size: 12px;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    margin: 0;
+    z-index: 5000;
 }
 
-.port-nopadding {
-    padding: 0;
-    margin: 0;
+.post-card {
+    background-color: #4aaaa5;
 }
 
 hr {
