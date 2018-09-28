@@ -4,6 +4,7 @@ body {
     background-image: url(../images/concrete-texture.png);
 }
 
+/* Instead of overwriting base elements of bootstrap 4, ended up adding my own classes (port prefix) */
 .port-maxwidth {
     max-width: 960px;
     margin: auto;
@@ -43,6 +44,7 @@ body {
     background-color: #4aaaa5;
 }
 
+/* Updated to include some basic syntax changes for HR and H1 to align to the previous assignment */
 hr {
     margin-top: 1rem;
     margin-bottom: 1rem;

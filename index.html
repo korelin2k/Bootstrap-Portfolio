@@ -5,6 +5,11 @@
     Tried to keep the html as clean as possible, and use CSS for nearly every modifier of the base element 
     (style, color, height, width, etc...). This was broken up into three sections: Header, Main and Footer 
     across the pages
+
+    UPDATE: Current assignment pivoted to use BootStrap 4, which greatly simplified portions of this. Having
+    the simple padding & margin classes is a godsend and allows quick iterations of the page.  I took some
+    "design liberty" to clean up the site to display in a more modern fashion... central aligned for one. The
+    header section now aligns to the rest of the area as well.
 -->
 
 <head>
@@ -13,12 +18,15 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0 2/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
 
     <!-- Header Section -->
+
+    <!-- Kept the "Hamburger" icon and tried out the fontawesome icons here on the links portion - pretty easy -->
     <div class="container-fluid bg-white w-100 p-0 m-0">
         <div class="row port-maxwidth p-0 bg-white">
             <div class="col p-0 m-0">
@@ -32,13 +40,13 @@
                     <div class="collapse navbar-collapse" id="titleToggler">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#"><i class="fa fa-id-card" aria-hidden="true"></i> About <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                                <a class="nav-link" href="portfolio.html"><i class="fa fa-line-chart" aria-hidden="true"></i> Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="contact.html"><i class="fa fa-address-book" aria-hidden="true"></i> Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -84,17 +92,23 @@
                     <p>
                         I'm building that on top of a strong foundation in:
                     </p>
+
+                    <!-- 
+                        Saw something cool. Had to try out something cool - also leveraged the font awesome icons here... pretty nice overall. 
+                        Not entirely happy how this portion displays in a very small display... in the future, would look to have it flip to a
+                        more vertical display.
+                    -->
                     <div class="row mb-5 ml-2 mr-2 p-2 bg-light">
                         <div class="col-4">
                             <div class="list-group" id="list-tab" role="tablist">
                                 <a class="list-group-item list-group-item-action active p-1" id="list-home-list"
-                                    data-toggle="list" href="#list-home" role="tab" aria-controls="home">Backend</a>
+                                    data-toggle="list" href="#list-home" role="tab" aria-controls="home"><i class="fa fa-database" aria-hidden="true"></i> Backend</a>
                                 <a class="list-group-item list-group-item-action p-1" id="list-profile-list"
-                                    data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">IaC</a>
+                                    data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"><i class="fa fa-server" aria-hidden="true"></i> IaC</a>
                                 <a class="list-group-item list-group-item-action p-1" id="list-messages-list"
-                                    data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">DevOps</a>
+                                    data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"><i class="fa fa-bolt" aria-hidden="true"></i> DevOps</a>
                                 <a class="list-group-item list-group-item-action p-1" id="list-settings-list"
-                                    data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Cloud</a>
+                                    data-toggle="list" href="#list-settings" role="tab" aria-controls="settings"><i class="fa fa-cloud" aria-hidden="true"></i> Cloud</a>
                             </div>
                         </div>
                         <div class="col-8">
